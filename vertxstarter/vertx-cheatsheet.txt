@@ -111,3 +111,5 @@ request is a read stream, and an HTTP response is a write stream.
 
 Back-pressure is a mechanism for a consumer of events to signal an event’s producer
 that it is emitting events at a faster rate than the consumer can handle them.
+
+https://github.com/realyurimednikov/vertx-hibernate/tree/master/src/main/java/xyz/mednikov/sandbox/hibernate
