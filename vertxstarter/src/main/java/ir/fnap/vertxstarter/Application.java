@@ -25,21 +25,9 @@ public class Application extends AbstractVerticle {
     new BookHandler(router);
    // new AuthorHandler(router);
 
+var server=  vertx.createHttpServer();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  vertx.createHttpServer().requestHandler(router).listen(8080,httpServerAsyncResult ->{
+server.requestHandler(router).listen(8080,"0.0.0.0",httpServerAsyncResult ->{
         if(httpServerAsyncResult.succeeded()){
 
           startPromise.complete();
